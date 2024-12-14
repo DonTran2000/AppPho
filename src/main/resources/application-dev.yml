@@ -5,11 +5,11 @@ spring:
   devtools:
     add-properties: true
   datasource:
-    url: jdbc:mysql://localhost:3306/pho_app
-    username: root
-    password: trandon123
+    url: jdbc:postgresql://localhost:5432/pho_app
+    username: postgres
+    password: postgres
   jpa:
-    database-platform: org.hibernate.dialect.MySQL8Dialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: none
     show-sql: false
