@@ -22,7 +22,7 @@ public class OpenApiConfig {
 
     @Bean
     public GroupedOpenApi publicApi(@Value("${openapi.service.api-docs}") String apiDocs) {
-        return GroupedOpenApi.builder().group(apiDocs).packagesToScan("com.don.controller").build();
+        return GroupedOpenApi.builder().group(apiDocs).packagesToScan("com.don.apppho.controller").build();
     }
 
     @Bean
